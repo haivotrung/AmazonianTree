@@ -7,11 +7,11 @@ Although there are no fathers, brothers, uncles, etc. on Amazonia, there are sti
 The program will accept commands from a user. There will be one command per line, in the form: *verb* *object* *relation* *target*
 <ul>
 
-<li> *relation* and *target* are optional, as described below.</li>
-<li> *verb* is one of “create”, “set” , “get” , “is”, or “count”.</li>
-<li> *object* is an Amazonian’s name.  Each Amazonian has a unique name.</li>
-<li> *relation* is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.</li>
-<li> *target* is an Amazonian’s name.</li>
+<li> relation and target are optional, as described below.</li>
+<li> verb is one of “create”, “set” , “get” , “is”, or “count”.</li>
+<li> object is an Amazonian’s name.  Each Amazonian has a unique name.</li>
+<li> relation is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.</li>
+<li> target is an Amazonian’s name.</li>
 
 
 </ul>
