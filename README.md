@@ -5,24 +5,17 @@ On Amazonia (where Wonder Woman is from), there are only women.  They reproduce 
 Although there are no fathers, brothers, uncles, etc. on Amazonia, there are still parents, ancestors, descendants, sisters, etc. to keep track of.  Hippolyta, Queen of the Amazons, wants a program to keep track of all these relationships.
 
 The program will accept commands from a user. There will be one command per line, in the form:
-<verb> <object> <relation> <target>
-
-<relation> and <target> are optional, as described below.
-
-<verb> is one of “create”, “set” , “get” , “is”, or “count”.
-
-<object> is an Amazonian’s name.  Each Amazonian has a unique name.
-
-<relation> is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.
-
-<target> is an Amazonian’s name.
+      <verb> <object> <relation> <target>
+      <relation> and <target> are optional, as described below.
+      <verb> is one of “create”, “set” , “get” , “is”, or “count”.
+      <object> is an Amazonian’s name.  Each Amazonian has a unique name.
+      <relation> is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.
+      <target> is an Amazonian’s name.
 
 
-Create
-
-create <name>	Creates <name> as an Amazonian who can be referred to in other commands.  If <name> is not created, referring to it in later commands is an error.
 
 
+Create: create <name>	Creates <name> as an Amazonian who can be referred to in other commands.  If <name> is not created, referring to it in later commands is an error.
 Examples
 
 create Diana	Creates an Amazonian named “Diana”.
@@ -30,22 +23,14 @@ create Hippolyta	Creates an Amazonian named “Hippolyta”.
 create Nubia	Creates an Amazonian named “Nubia”.
 
 
-Set
-
-set <name> <relation> <target>	Sets the relationship between name and target.  The only valid relations in a set command are “parent” and “child”.
-
-
+Set: set <name> <relation> <target>	Sets the relationship between name and target.  The only valid relations in a set command are “parent” and “child”.
 Examples
 
 set Hippolyta parent Diana	Sets Hippolyta as the parent of Diana.
 set Hippolyta parent Nubia	Sets Hippolyta as the parent of Nubia
 
 
-Get
-
-get <name> <relation>	Prints out a list of all Amazonians that have <relation> to <name>.
-
-
+Get: get <name> <relation>	Prints out a list of all Amazonians that have <relation> to <name>.
 Examples
 
 get Diana parent	Prints out “Hippolyta”
@@ -53,22 +38,14 @@ get Hippolyta child	Prints out “Diana” and “Nubia”
 get Nubia child	Prints out “none”
 
 
-Is
-
-is <name> <relation> <target>	Prints out True if <name> has <relation> to <target>, False otherwise.
-
-
+Is: is <name> <relation> <target>	Prints out True if <name> has <relation> to <target>, False otherwise.
 Examples
 
 is Diana parent Nubia	Prints out “False”
 is Diana sister Nubia	Prints out “True”
 
 
-Count
-
-count <name> <relation>	Prints out the number of Amazonians that <name> has <relation> with.
-
-
+Count: count <name> <relation>	Prints out the number of Amazonians that <name> has <relation> with.
 Examples
 
 count Hippolyta child	Prints out “2”
@@ -76,7 +53,7 @@ count Diana descendant	Prints out “0”
 
 
 
-Notes:
+<b>Notes</b>:
 1.	If a user sets Shirley to be Diana’s parent, the user must not be required to set Diana as Shirley’s child.  Diana is Shirley’s child, but the user need not enter that explicitly.
 2.	Descendants are children, grandchildren, etc.  Ancestors are parents, grandparents, etc.
 3.	If A and B have the same parent, A and B are sisters.
