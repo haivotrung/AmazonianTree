@@ -5,18 +5,19 @@ On Amazonia (where Wonder Woman is from), there are only women.  They reproduce 
 Although there are no fathers, brothers, uncles, etc. on Amazonia, there are still parents, ancestors, descendants, sisters, etc. to keep track of.  Hippolyta, Queen of the Amazons, wants a program to keep track of all these relationships.
 
 The program will accept commands from a user. There will be one command per line, in the form:
-<ul>
+<ol>
      <li> <verb> <object> <relation> <target></li>
      <li> <relation> and <target> are optional, as described below.</li>
      <li> <verb> is one of “create”, “set” , “get” , “is”, or “count”.</li>
      <li> <object> is an Amazonian’s name.  Each Amazonian has a unique name.</li>
      <li> <relation> is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.</li>
      <li> <target> is an Amazonian’s name.</li>
-</ul>
+</ol>
 
 
 
-Create: create <name>	Creates <name> as an Amazonian who can be referred to in other commands.  If <name> is not created, referring to it in later commands is an error.
+Create: create <name>	
+     Creates <name> as an Amazonian who can be referred to in other commands.  If <name> is not created, referring to it in later commands is an error.
 Examples
 
 create Diana	Creates an Amazonian named “Diana”.
@@ -24,7 +25,8 @@ create Hippolyta	Creates an Amazonian named “Hippolyta”.
 create Nubia	Creates an Amazonian named “Nubia”.
 
 
-Set: set <name> <relation> <target>	Sets the relationship between name and target.  The only valid relations in a set command are “parent” and “child”.
+Set: set <name> <relation> <target>	
+    Sets the relationship between name and target.  The only valid relations in a set command are “parent” and “child”.
 Examples
 
 set Hippolyta parent Diana	Sets Hippolyta as the parent of Diana.
