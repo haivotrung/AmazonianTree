@@ -5,13 +5,14 @@ On Amazonia (where Wonder Woman is from), there are only women.  They reproduce 
 Although there are no fathers, brothers, uncles, etc. on Amazonia, there are still parents, ancestors, descendants, sisters, etc. to keep track of.  Hippolyta, Queen of the Amazons, wants a program to keep track of all these relationships.
 
 The program will accept commands from a user. There will be one command per line, in the form:
-      <verb> <object> <relation> <target>
-      <relation> and <target> are optional, as described below.
-      <verb> is one of “create”, “set” , “get” , “is”, or “count”.
-      <object> is an Amazonian’s name.  Each Amazonian has a unique name.
-      <relation> is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.
-      <target> is an Amazonian’s name.
-
+<ul>
+     <li> <verb> <object> <relation> <target></li>
+     <li> <relation> and <target> are optional, as described below.</li>
+     <li> <verb> is one of “create”, “set” , “get” , “is”, or “count”.</li>
+     <li> <object> is an Amazonian’s name.  Each Amazonian has a unique name.</li>
+     <li> <relation> is one of “parent”, “child”, “sister”, “ancestor”, “descendant”.</li>
+     <li> <target> is an Amazonian’s name.</li>
+</ul>
 
 
 
@@ -63,7 +64,7 @@ count Diana descendant	Prints out “0”
 7.	If A is B’s parent, and the user later enters that C is B’s parent, then from that point on C is B’s parent.
 8.	Aphrodite is the ultimate ancestor of every Amazonian, and she has no parent.  The user need not create her.
 
-Constraints:
+<b>Constraints</b>:
 1.	Parent-child relationships are non-circular.  For example, if A is B’s parent, and B is C’s parent, C may not be A’s parent.
 2.	A cannot be both sister and mother to B.
 3.	Both of these cannot be true: A is sister to B, B is mother to A.
