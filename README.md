@@ -20,42 +20,19 @@ The program will accept commands from a user. There will be one command per line
 
 Create: create <name>	
      Creates <name> as an Amazonian who can be referred to in other commands.  If <name> is not created, referring to it in later commands is an error.
-Examples
-
-create Diana	Creates an Amazonian named “Diana”.
-create Hippolyta	Creates an Amazonian named “Hippolyta”.
-create Nubia	Creates an Amazonian named “Nubia”.
 
 
 Set: set <name> <relation> <target>	
     Sets the relationship between name and target.  The only valid relations in a set command are “parent” and “child”.
-Examples
 
-set Hippolyta parent Diana	Sets Hippolyta as the parent of Diana.
-set Hippolyta parent Nubia	Sets Hippolyta as the parent of Nubia
+Get: get <name> <relation>	
+     Prints out a list of all Amazonians that have <relation> to <name>.
 
+Is: is <name> <relation> <target>	
+     Prints out True if <name> has <relation> to <target>, False otherwise.
 
-Get: get <name> <relation>	Prints out a list of all Amazonians that have <relation> to <name>.
-Examples
-
-get Diana parent	Prints out “Hippolyta”
-get Hippolyta child	Prints out “Diana” and “Nubia”
-get Nubia child	Prints out “none”
-
-
-Is: is <name> <relation> <target>	Prints out True if <name> has <relation> to <target>, False otherwise.
-Examples
-
-is Diana parent Nubia	Prints out “False”
-is Diana sister Nubia	Prints out “True”
-
-
-Count: count <name> <relation>	Prints out the number of Amazonians that <name> has <relation> with.
-Examples
-
-count Hippolyta child	Prints out “2”
-count Diana descendant	Prints out “0”
-
+Count: count <name> <relation>	
+     Prints out the number of Amazonians that <name> has <relation> with.
 
 
 <b>Notes</b>:
