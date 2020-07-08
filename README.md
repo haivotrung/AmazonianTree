@@ -18,20 +18,20 @@ The program will accept commands from a user. There will be one command per line
 
 
 
-Create: create <name>	
-     Creates <name> as an Amazonian who can be referred to in other commands.  If <name> is not created, referring to it in later commands is an error.
+Create: create *name* /n	
+     Creates *name* as an Amazonian who can be referred to in other commands.  If *name* is not created, referring to it in later commands is an error.
 
 
-Set: set <name> <relation> <target>	
+Set: set *name* *relation* *target*	
     Sets the relationship between name and target.  The only valid relations in a set command are “parent” and “child”.
 
-Get: get <name> <relation>	
+Get: get *name* *relation*	
      Prints out a list of all Amazonians that have <relation> to <name>.
 
-Is: is <name> <relation> <target>	
+Is: is *name* *relation* *target*
      Prints out True if <name> has <relation> to <target>, False otherwise.
 
-Count: count <name> <relation>	
+Count: count *name* *relation*	
      Prints out the number of Amazonians that <name> has <relation> with.
 
 
